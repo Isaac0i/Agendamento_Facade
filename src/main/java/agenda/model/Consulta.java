@@ -6,9 +6,9 @@ import java.time.format.DateTimeFormatter;
 public class Consulta {
     private Integer idPaciente;
     private Integer idMedico;
-    private String status;
+    private StatusConsulta status;
     private LocalDateTime dataConsulta;
-    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+
 
     public Integer getIdPaciente() {
         return idPaciente;
@@ -26,14 +26,6 @@ public class Consulta {
         this.idMedico = idMedico;
     }
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
     public LocalDateTime getDataConsulta() {
         return dataConsulta;
     }
@@ -48,4 +40,5 @@ public class Consulta {
         this.status = status;
         this.dataConsulta = dataConsulta;
     }
+
 }
